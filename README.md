@@ -42,4 +42,4 @@ _Телеграм:_ [Stupident](https://t.me/stupident)
 
 
 ### Як був створений цей проект:
-![Котик](https://i.gifer.com/2uG5.gif)
+![Котик](https://media.giphy.com/media/aNqEFrYVnsS52/giphy.gif)
