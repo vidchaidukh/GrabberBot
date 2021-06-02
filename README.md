@@ -24,7 +24,7 @@ _Телеграм:_ [Stupident](https://t.me/stupident)
 #### Нові оголошення <br>
 ![Нові оголошення](https://github.com/Stupident/GrabberBot/blob/main/doc/new_adv.gif)
 #### Оповіщення  <br>
-![Оповіщення](https://raw.githubusercontent.com/Stupident/GrabberBot/main/doc/notification.gif)
+![Оповіщення](https://github.com/Stupident/GrabberBot/blob/main/doc/notification.gif)
 
 
 #### Алгоритм роботи:
@@ -42,4 +42,4 @@ _Телеграм:_ [Stupident](https://t.me/stupident)
 
 
 ### Як був створений цей проект:
-![Котик](https://gifer.com/ru/embed/2uG5)
+![Котик](https://i.gifer.com/2uG5.gif)
