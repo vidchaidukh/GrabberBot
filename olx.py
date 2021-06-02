@@ -10,6 +10,9 @@ headers = [{'User-Agent': 'Firefox 75 on Mac OS X (Mavericks)'},
            {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:42.0) Gecko/20100101 Firefox/80.0'}]
 
 def catch(url, req_id, last_update):
+    '''Функція грабінгу та парсингу сторінки з оголошеннями, отримання посилання на кожне оголошення, дату публікації
+    та місцезнаходження'''
+
     try:
         r = requests.get(url, headers = choice(headers))
         with open('test.html', 'wb') as output_file:
@@ -40,6 +43,8 @@ def catch(url, req_id, last_update):
 
 
 def grab_advert(url_advert, date, location, req_id):
+    '''Функція грабінгу та парсингу сторінки оголошення, отримання 6 різних параметрів оголошення'''
+
     r = requests.get(url_advert, headers=choice(headers))
     with open('test.html', 'wb') as output_file:
         output_file.write(r.text.encode('utf-8'))
@@ -66,6 +71,8 @@ def grab_advert(url_advert, date, location, req_id):
     write_to_adverts(req_id, id_adv, name, price, date, location, url_advert, description)
 
 def date_format(text):
+    '''Функція приведення часу платформи до стандартизованого формату бд'''
+
     months = {'май':'5'}
     time_now = datetime.now()
     date_list = text.split(' ')
@@ -80,6 +87,8 @@ def date_format(text):
     return date_str
 
 def write_to_adverts(req_id, id_adv, name, price, date, location, url_advert, description):
+    '''Функція додавання запису в таблицю adverts'''
+
     try:
         conn = sqlite3.connect('db/database.db', check_same_thread=False)
         cursor = conn.cursor()

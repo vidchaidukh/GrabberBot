@@ -6,6 +6,8 @@ import olx, izi
 board_grabbbers = {'olx' : olx.catch, 'izi' : izi.catch}
 
 def check():
+    '''Функція перевірки таблиці requests та ініціалізації пошуку'''
+
     conn = sqlite3.connect('db/database.db', check_same_thread=False)
     while True:
         cursor = conn.cursor()
