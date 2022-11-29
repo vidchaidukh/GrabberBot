@@ -5,7 +5,7 @@
 
 
 _Автор:_ Михайлюк Євгеній<br>
-_Пошта:_ yevhenii.mykhailiuk<br>
+_Пошта:_ yevhenii.mykhailiuk@gmail.com<br>
 _Телеграм:_ [Stupident](https://t.me/stupident)
 
 
